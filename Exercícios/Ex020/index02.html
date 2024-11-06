@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+        #extern {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+  
+        }
+
+        #intern {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(199, 199, 199);
+            border-radius: 13px;
+            border: 2px solid black;
+        }
+
+        p {
+            text-align: center;
+            font-family: Bungee Tint;
+        }
+
+        #intern > p {
+            display: none;
+        }
+
+        #intern:hover > p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="extern">
+        <div id="intern">
+            <p>acesse o nosso PLANO por R$19,99 JÁ!</p>
+        </div>
+    </div>
+</body>
+</html>

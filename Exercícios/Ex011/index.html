@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em tamanhos diferentes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir o site em vários dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 350px)" srcset="Imagens/P.png" type="image/png">
+        <source media="(max-width: 500px)" srcset="Imagens/M.png" type="image/png">
+        <img src="Imagens/G.png" alt="Imagens dinâmicas">
+    </picture>
+
+    <h1>Colocando áudios</h1>
+    <audio src="Mídias/In The Wild - National Sweetheart.mp3" controls autoplay></audio>
+</body>
+</html>

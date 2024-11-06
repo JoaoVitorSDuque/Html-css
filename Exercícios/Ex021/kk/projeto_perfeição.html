@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Pads</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+      * {
+        font-family: Roboto Slab;
+      }
+
+      h1 {
+        font-size: 3.5em;
+      }
+
+      article > h1 {
+        display: inline;
+        margin-top: 0;
+        text-align: center;
+        display: flexbox;
+        height: 100px;
+      }
+
+      a {
+        margin-right: 15px;
+        text-decoration: none;
+        color: #140f09;
+        font-weight: 450;
+      }
+
+      div > img {
+        margin-right: 20px;
+        display: inline;
+      }
+
+      article > img {
+        display: inline;
+        margin-right: 5px;
+      }
+
+      div > p {
+        display: inline;
+      }
+
+      section div {
+        display: flex; /* Faz a imagem e o texto ficarem lado a lado */
+        align-items: flex-start; /* Alinha o conteúdo ao topo */
+      }
+
+      desgraça {
+        display: block;
+      }
+
+      body {
+        background-color: #ffe4c4;
+      }
+
+      .cabecalho {
+        background-color: #d79661;
+        color: #140f09;
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+        box-shadow: 3.5px 5px #917259;
+        outline: 2px solid #917259;
+      }
+
+      #parteum {
+        background-color: #d79661;
+        color: #140f09;
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 3.5px 5px #917259;
+        outline: 2px solid #917259;
+      }
+
+      #partedois {
+        background-color: #d79661;
+        color: #140f09;
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 3.5px 5px #917259;
+        outline: 2px solid #917259;
+      }
+
+      #links {
+        background-color: #917259;
+        box-shadow: 3.5px 5px #33281f;
+        outline: 2px solid #33281f;
+      }
+
+      #parteum:hover {
+        margin-left: 2px;
+        margin-right: 8px;
+      }
+
+      #partedois:hover {
+        margin-left: 2px;
+        margin-right: 8px;
+      }
+
+      #links:hover {
+        margin-left: 2px;
+        margin-right: 8px;
+      }
+
+      #titulo:hover {
+        margin-left: 2px;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <article id="titulo" class="cabecalho">
+        <img src="abeia.png" alt="" />
+        <h1>Meu site</h1>
+      </article>
+      <nav id="links" class="cabecalho">
+        <a href="https://instagram.com" target="_blank">
+          <img
+            src="https://img.icons8.com/?size=512&id=32320&format=png"
+            alt=""
+            width="25px"
+            height="25px"
+          />Instagram</a
+        >
+
+        <a href="https://Youtube.com" target="_blank"
+          ><img
+            src="https://cdn.icon-icons.com/icons2/3874/PNG/512/youtube_icon_244929.png"
+            alt=""
+            width="25px"
+            height="25px"
+          />Youtube</a
+        >
+
+        <a href="https://whatsapp.com" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/154/154858.png"
+            alt=""
+            width="20px"
+            height="20px"
+          />WhatsApp</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section id="parteum">
+        <h2>Blank</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+          cupiditate quas, veniam unde illo libero sit porro sint quae
+          voluptatum blanditiis reiciendis nisi omnis quo ducimus neque mollitia
+          facere repellat. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Voluptatem tempora, cumque molestiae impedit eum repellendus.
+          Quos, ratione. Ex repudiandae nihil aliquid molestias delectus ea
+          cupiditate aspernatur! Eveniet enim ea doloremque?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
+          voluptate nam aliquam impedit repellendus vero numquam, tempore illo
+          asperiores fugit ab magnam aperiam omnis, culpa sapiente. Molestiae
+          pariatur totam numquam. lorem
+        </p>
+      </section>
+      <section id="partedois">
+        <div>
+          <img
+            src="images-removebg-preview.png"
+            alt=""
+            width="140px"
+            height="140px"
+            id="desgraça"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+            ducimus, laborum vitae dolor ipsa doloremque officia, magni eius
+            assumenda possimus, incidunt hic cupiditate nobis? Repellat vitae
+            maxime autem maiores dolorum! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Velit ipsum est veritatis quos quisquam adipisci.
+            Delectus, impedit exercitationem corporis id atque ex sint in magnam
+            optio itaque ipsam dignissimos quam.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

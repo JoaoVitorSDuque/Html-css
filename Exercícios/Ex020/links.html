@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <style>
+      a {
+        color: hsl(199, 76%, 53%);
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: rgb(20, 114, 126);
+      }
+
+      div {
+        height: 100px;
+        width: 120px;
+      }
+
+      ul {
+        align-items: center;
+      }
+
+      a::before {
+        content: '>';
+      }
+
+      a::after {
+        content: '<';
+      }
+    </style>
+  </head>
+  <body>
+    <h1>personalizando links</h1>
+    <div>
+      <ul>
+        <li id="um">
+          <a href="https:/youtube.com" target="_blank" rel="extern">Youtube</a>
+        </li>
+        <li id="dois">
+          <a href="https:/tiktok.com" target="_blank" rel="extern">Tiktok</a>
+        </li>
+        <li id="tres">
+          <a href="https:/instagram.com" target="_blank" rel="extern"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,162 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cordel Moderno JV</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
-        body {
-            background-color: gray;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap");
+      body {
+        background-color: gray;
+        margin: 0;
+        margin: 0px;
+        padding: 0px;
+      }
 
-        section > p, div > p {
-            font-family: "Sriracha";
-        }
+      * {
+        margin: 0px;
+      }
 
-        .normal {
-            background-color: white;
-        }
+      section > p,
+      div > p {
+        font-family: "Sriracha";
+      }
 
-        .imagem {
-            
-            background-size: cover;
-            background-position: right;
-            background-attachment: fixed;
-        }
+      section {
+        background-color: white;
+        margin: 0;
+      }
 
-        .div-1 {
-            display: inline-block;
-            background-color: rgba(0, 0, 0, 0.534);
-        }
+      .imagem {
+        background-size: cover;
+        background-position: right;
+        background-attachment: fixed;
+        box-shadow: inset 0px 3px 15px 8px rgba(0, 0, 0, 0.384);
+      }
 
-        .div-1 > p {
-            color: white;
-        }
+      .div-1 {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.534);
+        padding: 0px;
+      }
 
-        section {
-            padding-top: 10vh;
-            padding-bottom: 10vh;
-            padding-left: 30px;
-        }
+      .div-1 > p {
+        color: white;
+        line-height: 1em;
+        padding: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-right: 0px;
+      }
 
-        p {
-            font-size: 2em;
-            line-height: 2em;
-        }
+      section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 30px;
+      }
 
-        #imagem-joaninha {
-            background-image: url(imagens/background001.jpg);
-        }
+      p {
+        font-size: 3.5vw;
+        line-height: 1em;
+        margin: 1em;
+        margin-left: 0px;
+      }
 
-        #imagem-carta {
-            background-image: url(imagens/background002.jpg);
-        }
+      #imagem-joaninha {
+        background-image: url(imagens/background001.jpg);
+      }
 
-        header {
-            background-color: black;
-            color: white;
-            text-align: center;
-            
-        }
+      #imagem-carta {
+        background-image: url(imagens/background002.jpg);
+      }
 
-        header > h1 {
-            font-family: "Passion One";
-            font-size: 10vw;
-        }
+      header {
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin: 0;
+      }
 
-        a {
-            color: white;
-            font-weight: bolder;
-        }
+      header > h1 {
+        font-family: "Passion One";
+        font-size: 10vw;
+        padding-top: 50px;
+      }
+
+      header > h1,
+      header > p {
+        margin: 0;
+      }
+
+      a {
+        color: white;
+        font-weight: bolder;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      #autor {
+        font-size: 1.3em;
+        padding-bottom: 45px;
+      }
+
+      footer {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        background-color: black;
+      }
+
+      footer > p {
+        font-size: 1.25em;
+        margin: 0px;
+        padding: 0px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Cordel Moderno</h1>
-        <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank">Milton Duarte</a></p>
+      <h1>Cordel Moderno</h1>
+      <p id="autor">
+        Por
+        <a
+          href="https://www.recantodasletras.com.br/poesias/3186743"
+          target="_blank"
+          >Milton Duarte</a
+        >
+      </p>
     </header>
 
     <main>
-        <section class="normal">
-            
-                <p>Estou ficando cansado</p>
-                <p>Da tal tecnologia</p>
-                <p>Só se fala por e-mail</p>
-                <p>Mensagem curta e fria</p>
-                <p>Twitter e Facebook</p>
-                <p>Antes que eu caduque</p>
-                <p>Vou dizer tudo em poesia.</p>
-        </section>
-       
-        <section id="imagem-joaninha" class="imagem">
-            <div class="div-1">
-                <p>Não é mais como era antes</p>
-                <p>É tudo abreviado</p>
-                <p>"Você" só tem duas letras</p>
-                <p>O "O" e o "E" foi riscado</p>
-                <p>Para declarar o amor</p>
-                <p>Basta botar uma flor</p>
-                <p>E um coração desenhado.</p>
-            </div>
-        </section>
-            
-        <section>
-            <p>Arroba agora não pesa</p>
-            <p>É parte de um endereço</p>
-            <p>Ponto final nem se usa</p>
-            <p>Ou vai até no começo</p>
-            <p>Agora é .com</p>
-            <p>Se o saite é muito bom</p>
-            <p>Ele vale um alto preço.</p>
+      <section class="normal">
+        <p>Estou ficando cansado</p>
+        <p>Da tal tecnologia</p>
+        <p>Só se fala por e-mail</p>
+        <p>Mensagem curta e fria</p>
+        <p>Twitter e Facebook</p>
+        <p>Antes que eu caduque</p>
+        <p>Vou dizer tudo em poesia.</p>
+      </section>
 
-        </section>
-           
-        <section>
-            <p>Pra piorar a liguagem</p>
-            <p>O emoticom é um risco</p>
-            <p>Tem símbolo para tudo</p>
-            <p>Ponto e vírgula e um asterisco</p>
-            <p>Um beijo significa</p>
-            <p>Pra entender como fica</p>
-            <p>Decifre esse rabisco.</p>
-        </section>
+      <section id="imagem-joaninha" class="imagem">
+        <div class="div-1">
+          <p>Não é mais como era antes</p>
+          <p>É tudo abreviado</p>
+          <p>"Você" só tem duas letras</p>
+          <p>O "O" e o "E" foi riscado</p>
+          <p>Para declarar o amor</p>
+          <p>Basta botar uma flor</p>
+          <p>E um coração desenhado.</p>
+        </div>
+      </section>
 
-        <section id="imagem-carta" class="imagem">
-            <div class="div-1">
-                <p>Tenho saudade das cartas</p>
-                <p>Escritas com a própria mão</p>
-                <p>Mandava no mês de Junho</p>
-                <p>Só chegava no Verão</p>
-                <p>Mas matava a saudade</p>
-                <p>Era texto de verdade</p>
-                <p>Nas linhas do coração.</p>
-            </div>
-        </section>
+      <section>
+        <p>Arroba agora não pesa</p>
+        <p>É parte de um endereço</p>
+        <p>Ponto final nem se usa</p>
+        <p>Ou vai até no começo</p>
+        <p>Agora é .com</p>
+        <p>Se o saite é muito bom</p>
+        <p>Ele vale um alto preço.</p>
+      </section>
 
-        <section>
-            <p>Agora, escrevo e envio</p>
-            <p>Chegando na mesma hora</p>
-            <p>Mas quando vou prosear</p>
-            <p>A pessoa foi embora</p>
-            <p>Abriu outro aplicativo</p>
-            <p>O mundo ficou cativo</p>
-            <p>Da tecnologia do agora.</p>
-        </section>
+      <section>
+        <p>Pra piorar a liguagem</p>
+        <p>O emoticom é um risco</p>
+        <p>Tem símbolo para tudo</p>
+        <p>Ponto e vírgula e um asterisco</p>
+        <p>Um beijo significa</p>
+        <p>Pra entender como fica</p>
+        <p>Decifre esse rabisco.</p>
+      </section>
 
-        <section>
-            <p>Felizmente, pra orar</p>
-            <p>Não precisa de internet</p>
-            <p>Deus escuta todo mundo</p>
-            <p>Se quiser, faça esse teste</p>
-            <p>Dois pontos são dois joelhos</p>
-            <p>Seus lábios são aparelhos</p>
-            <p>Deixe que Deus interprete.</p>
-        </section>
+      <section id="imagem-carta" class="imagem">
+        <div class="div-1">
+          <p>Tenho saudade das cartas</p>
+          <p>Escritas com a própria mão</p>
+          <p>Mandava no mês de Junho</p>
+          <p>Só chegava no Verão</p>
+          <p>Mas matava a saudade</p>
+          <p>Era texto de verdade</p>
+          <p>Nas linhas do coração.</p>
+        </div>
+      </section>
+
+      <section>
+        <p>Agora, escrevo e envio</p>
+        <p>Chegando na mesma hora</p>
+        <p>Mas quando vou prosear</p>
+        <p>A pessoa foi embora</p>
+        <p>Abriu outro aplicativo</p>
+        <p>O mundo ficou cativo</p>
+        <p>Da tecnologia do agora.</p>
+      </section>
+
+      <section>
+        <p>Felizmente, pra orar</p>
+        <p>Não precisa de internet</p>
+        <p>Deus escuta todo mundo</p>
+        <p>Se quiser, faça esse teste</p>
+        <p>Dois pontos são dois joelhos</p>
+        <p>Seus lábios são aparelhos</p>
+        <p>Deixe que Deus interprete.</p>
+      </section>
     </main>
 
     <footer>
-        <p>Site criado por <a href="https://gustavoguanabara.github.io/" target="_blank">Gustavo Guanabara</a> para o <a href="https://www.cursoemvideo.com/" target="_blank">CursoemVideo</a></p>
+      <p>
+        Site criado por
+        <a href="https://gustavoguanabara.github.io/" target="_blank"
+          >Gustavo Guanabara</a
+        >
+        para o
+        <a href="https://www.cursoemvideo.com/" target="_blank">CursoemVideo</a>
+      </p>
     </footer>
-</body>
+  </body>
 </html>

@@ -12,4 +12,4 @@
 
 <p><a href="https://joaovitorsduque.github.io/Html-css/Exerc%C3%ADcios/Desafio%20012/" target="_blank">Fiz sozinho</a></p>
 
-<p><a href="http://127.0.0.1:5500/Html-css/Exerc%C3%ADcios/Desafio%20012%20com%20o%20GG/index.html" target="_blank">Fiz com o GG</a></p>
+<p><a href="https://joaovitorsduque.github.io/Html-css/Exerc%C3%ADcios/Desafio%20012%20com%20o%20GG/" target="_blank">Fiz com o GG</a></p>

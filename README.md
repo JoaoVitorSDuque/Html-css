@@ -8,4 +8,8 @@
 
 <p><a href="https://joaovitorsduque.github.io/Html-css/Exercícios/Desafio 10 com o GG/index.html" target="_blank">A versão final do site</a></p>
 
-<p>Obs: A diferença dos dois é enorme kk</p>
+<h2>Projeto Cordel</h2>
+
+<p><a href="https://joaovitorsduque.github.io/Html-css/Exerc%C3%ADcios/Desafio%20012/" target="_blank">Fiz sozinho</a></p>
+
+<p><a href="https://joaovitorsduque.github.io/Html-css/Exerc%C3%ADcios/Desafio%20012%20com%20o%20GG/" target="_blank">Fiz com o GG</a></p>

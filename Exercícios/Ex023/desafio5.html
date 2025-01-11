@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de células</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.02em;
+        }
+        table {
+            width: 550px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 5px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .nonAlinhed {
+            text-align: left;
+        }
+
+        .titles {
+            background-color: gray;
+            color: white;
+        }
+
+        .nonAlinhed1 {
+            background-color: gray;
+            color: white;
+        }
+        
+        div {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th class="titles" rowspan="2" scope="col">Área</th>
+                    <th class="titles" rowspan="2" scope="col">Disciplinas</th>
+                    <th class="titles" colspan="2" scope="colgroup">Notas</th>
+                    <th class="titles" rowspan="2" scope="col">Média</th>
+                </tr>
+                <tr>
+                    <th class="titles" scope="col">Nota 1</th>
+                    <th class="titles" scope="col">Nota 2</th>
+                </tr>
+            </thead>
+            <tr>
+                <td rowspan="4" >Exatas</td>
+                <td class="nonAlinhed">Matemática</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+            </tr>
+            <tr>
+                <td class="nonAlinhed">Física</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+            </tr>
+            <tr>
+                <td class="nonAlinhed">Química</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+            </tr>
+            <tr>
+                <td class="nonAlinhed">Biologia</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+            </tr>
+            <tr>
+                <th class="nonAlinhed1" colspan="4" scope="row">Média de exatas</th>
+                <td class="nonAlinhed1">0.0</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Humanas</td>
+                <td class="nonAlinhed">História</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+            </tr>
+            <tr>
+                <td class="nonAlinhed">Geografia</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+                <td class="nonAlinhed">0.0</td>
+            </tr>
+            <tr>
+                <th class="nonAlinhed1" colspan="4" scope="row">Média de humanas</th>
+                <td class="nonAlinhed1">0.0</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

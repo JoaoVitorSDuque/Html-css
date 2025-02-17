@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('/Html-css/Exercícios/Desafio013/pacote-d013/imagens/fundo-madeira.jpg');
+    background-size: cover;
+
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 311px;
+    height: 627px;
+    background: url(../pacote-d013/imagens/frame-iphone.png);
+}
+
+iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 267px;
+    height: 473px;
+}
+
+#rs>a>img {
+    margin: 10px;
+    margin-bottom: 20px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+#rs>a>img:hover {
+    border: 1px solid white;
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+#rs {
+    float: right;
+}
+
+
+
+

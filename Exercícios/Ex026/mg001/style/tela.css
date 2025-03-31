@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* CSS para a tela principal */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}

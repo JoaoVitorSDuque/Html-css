@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <p><label for="nu1">Número 1</label>
+        <input type="number" name="1nu" id="nu1" min="0" max="50" required oninput="isoma.innerHTML = Number(nu1.value) + Number(nu2.value)">
+        </p>
+
+
+        <p><label for="nu2">Número 2</label>
+        <input type="number" name="1nu" id="nu2" min="0" max="50" required oninput="isoma.innerHTML = Number(nu1.value) + Number(nu2.value)">
+        </p>
+
+        <p><output name="soma" id="isoma">0</output></p>
+
+        <p><label for="irange">Numero</label>
+        <input type="range" name="rang" id="irange" min="0" max="20" value="10" oninput="exibi.innerHTML = Number(irange.value)">
+        <output id="exibi">10</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+
+    
+    </form>
+</body>
+</html>

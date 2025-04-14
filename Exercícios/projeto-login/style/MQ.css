@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* Media Queries 
+Extra small: 0–575 px, for phones
+Small: 576–767 px, for tablets and large phones
+Medium: 768–991 px, for tablets and small laptops
+Large: 992–1199 px, for desktops and large laptops
+Extra large: 1200 px and up, for large laptops and desktops
+*/
+:root {
+    --verde: #49a09d; 
+    --lilas: #5f2c82;
+    }
+
+@media screen and (min-width:770px) and (max-width:992px) {
+    section {
+        width: 85vw;
+    }
+    section > div#img {
+        float: left;
+        width: 40%;
+        height: 100%;
+        background-position: center, center;
+    }
+    #form {
+        float: right;
+        width: 60%;
+        height: 100%;
+        padding: 5px;
+    }
+
+    html, body {
+        background-image: linear-gradient(to bottom, var(--lilas),rgb(98, 44, 130), var(--verde));
+    }
+}
+
+@media screen and (min-width:992px) {
+section {
+    width: 950px;
+}
+section > div#img {
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-position: center, center;
+}
+#form {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+}
+html, body {
+    background-image: linear-gradient(to bottom, var(--lilas),rgb(98, 44, 130), var(--verde));
+}
+}

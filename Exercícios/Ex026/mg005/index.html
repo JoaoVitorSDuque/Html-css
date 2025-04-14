@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style/stylemq.css">
+</head>
+<body onresize="tamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <i class="material-symbols-outlined" id="burguer" onclick="abinha()">menu</i>
+
+        <menu id="hamBURGUER">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Mais</a></li>
+                <li><a href="#">Ajuda</a></li>
+                
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Teste de MQ</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo consectetur voluptate maiores dicta hic culpa facilis repudiandae assumenda necessitatibus, saepe reprehenderit aut libero enim. Ea blanditiis porro veritatis voluptate quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis dolor laboriosam iusto reprehenderit! Aliquam, aut vitae commodi, cumque similique iste, maiores accusamus quos alias eum et dignissimos quidem eius illo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis debitis quis provident odit blanditiis? Quas ipsum eum dolor quam velit reprehenderit dolores exercitationem corrupti, saepe perferendis dolore iste, itaque assumenda! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime maiores necessitatibus quam, sint temporibus minus quaerat, fugiat hic placeat atque quasi ipsa aliquam, dolore saepe accusamus veritatis sed provident rem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste temporibus odio delectus ut voluptatibus fugiat enim sapiente reprehenderit vitae. Sint, quasi ullam id dicta assumenda soluta culpa quos tempore tempora? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro provident magni eaque? Iure eligendi corporis, consectetur magni, ab at, atque dolores odio inventore corrupti porro itaque nulla alias voluptas necessitatibus.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto at rem harum officia possimus! Reiciendis maiores molestias, doloremque culpa sapiente recusandae, quod commodi aliquid ea quo, saepe quas voluptatibus dolore?</p>
+        </article>
+    </main>
+    <script>
+        function abinha() {
+        if (hamBURGUER.style.display == 'none') {
+            hamBURGUER.style.display = 'block'
+        }
+        else {
+            hamBURGUER.style.display = 'none'
+        }
+    }
+
+    function tamanho() {
+        if (window.innerWidth >= 800) {
+        hamBURGUER.style.display = 'block'
+    }   else {
+        hamBURGUER.style.display = 'none'
+    }
+}
+    </script>
+</body>
+</html>

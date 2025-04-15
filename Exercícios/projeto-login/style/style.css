@@ -31,9 +31,9 @@ section {
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 5px;
-    width: 260px;
-    height: 520px;
-    border-radius: 10px;
+    width: 310px;
+    height: 570px;
+    border-radius: 13px;
     box-shadow: 1px 2px 8px rgba(32, 0, 53, 0.671);
     transition: 1s;
 }
@@ -49,4 +49,61 @@ section > div#img {
     border-radius: 5px;
     background-size: cover;
     display: block;
+}
+h1, p {
+text-align: center;
+}
+
+label {
+    display: none;
+}
+
+input#submit {
+    display: block;
+    width: 95%;
+    height: 50px;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.425);
+    transition: 0.1s;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+input#submit:hover, a#botao:hover {
+    background-color: #62bebb;
+    cursor: pointer;
+}
+
+form > a#botao {
+    display: block;
+    text-decoration: none;
+    width: 95%;
+    height: 40px;
+    background-color: #49a09d;
+    margin: auto;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.425);
+    color: #ffffff;
+    padding: 2.5px;
+    transition: 0.1s;
+}
+
+div.campo {
+    background-color: var(--lilas);
+    margin: 5px 0px;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+    font-weight: lighter;
+    height: 40px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.425);
 }

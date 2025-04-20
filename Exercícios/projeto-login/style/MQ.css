@@ -14,6 +14,7 @@ Extra large: 1200 px and up, for large laptops and desktops
 @media screen and (min-width:770px) and (max-width:992px) {
     section {
         width: 85vw;
+        height: 320px;
     }
     section > div#img {
         float: left;
@@ -36,7 +37,7 @@ Extra large: 1200 px and up, for large laptops and desktops
 @media screen and (min-width:992px) {
 section {
     width: 950px;
-    height: 70vh;
+    height: 350px;
 }
 section > div#img {
     float: right;

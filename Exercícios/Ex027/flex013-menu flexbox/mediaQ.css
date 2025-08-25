@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+header, nav {
+    flex-flow: row wrap;
+}
+
+menu {
+    margin: auto;
+}
+
+nav {
+    width: 90vw;   
+    justify-content: center;
+}
+
+nav > a {
+    width: 40vw;
+}
+
+

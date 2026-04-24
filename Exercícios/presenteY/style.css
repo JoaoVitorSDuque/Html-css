@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(images.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+img {
+    max-width: 300px;
+}
+
+p.right {
+    float: right;
+    padding: 5;
+    margin-right: 20px;
+    max-width: 250px;
+}
+
+p.left {
+    padding: 5px;
+    margin-left: 20px;
+    max-width: 250px;
+}
+
+#img1, #img3, #img5, #img7, #img9, #img11 {
+    float: right;
+}
+
+#briefing {
+    display: none;
+}
+
+p.space {
+    height: 500px;
+}
+
+p.space1 {
+    height: 250px;
+}
+
+div {
+    text-align: center;
+    padding: 35px;
+}
+
+div#letra-musica {
+    text-align: start;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.37);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Início">
+    <h1>Aviso importante</h1> <p class="space1"></p>
+    <p>A próxima mensagem pode mudar algumas coisas</p>
+    <p>Então já quero perguntar agora: Tem certeza que quer continuar?</p>
+    <p class="space1"></p>
+    <div id="botaoo">
+    <button id="sim" class="botao" onclick="clicousim()">Sim</button> <button id="nao" class="botao" onclick="clicounao()">Melhor não...</button>
+    </div>
+    <p class="space1"></p>
+    </div>
+
+    <div id="melhorn">
+        <p class="space"></p>
+        <p>Boa escolha...</p>
+        <p class="space"></p> <p class="space1"></p>
+        <p>Mas você realmente acha que eu deixaria você sair sem ver isso?</p>
+        <p>Kkkkk</p>
+        <p class="space1"></p>
+
+        <button id="simsim" class="botao" onclick="clicoudepois()">Ok, agora quero ver...</button>
+        <p class="space1"></p>
+    </div>
+
+    <div id="melhors">
+        <p class="space"></p>
+        <p>Então tá...</p> 
+        <p class="space"></p>
+        <p>Eu poderia só te desejar feliz aniversário.</p>
+        <p class="space1"></p>
+        <p>Mas isso seria um pouco sem graça.</p>
+        <p class="space"></p>
+        <p>Então vou ser mais sincero do que eu deveria...</p>
+        <p class="space"></p> <p class="space"></p> <p class="space"></p>
+        <p>Eu gosto muito de falar e ficar com você.</p>
+        <p class="space1"></p>
+        <p>Tipo... Mais do que eu planejei gostar.</p>
+        <br><br>
+        <p>E isso é claramente culpa sua</p>
+        <p class="space"></p><p class="space"></p><p class="space"></p>
+        <p>Relaxa Yas, não é uma declaração ou algo do tipo.</p>
+        <p class="space"></p><p class="space"></p>
+        <p>...Ainda</p>
+        <p class="space"></p>
+        <p>Mas falando sério.</p>
+        <p>Você é uma pessoa muito especial.</p>
+        <p>E eu gosto de ter você por perto.</p>
+        <p class="space"></p>
+        <p>Feliz aniversário!!!</p>
+        <p class="space1"></p>
+        <p>Espero continuar sendo alguém que você gosta de ter por perto também.</p>
+        <p class="space"></p>
+
+        <button id="Continuar"><a href="https://joaovitorsduque.github.io/Html-css/Exerc%C3%ADcios/presenteY/index4.html">Continuar</a></button> 
+        <p class="space1"></p>
+    </div>
+
+    <script>
+        var melhorsim = document.getElementById('melhors')
+        var melhornao = document.getElementById('melhorn')
+        var botoes = document.getElementById('botaoo')
+
+        function clicousim() {
+            melhorsim.style.display = 'block';
+            botoes.style.display = 'none'
+        }
+
+        function clicounao() {
+            melhornao.style.display = 'block';
+            botoes.style.display = 'none';
+        }
+
+        function clicoudepois() {
+            melhorsim.style.display = 'block';
+        }
+
+    </script>
+</body>
+</html>

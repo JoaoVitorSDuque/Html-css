@@ -1,0 +1,550 @@
+*{
+  box-sizing:border-box;
+}
+:root{
+  --red:#8f1d2c;
+  --red-dark:#651521;
+  --cream:#f5f0e8;
+  --paper:#fcfaf6;
+  --ink:#202020;
+  --muted:#6f6a64;
+  --line:rgba(32,32,32,.12);
+  --gold:#bc8e4a;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  margin:0;
+  font-family:"Montserrat",system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  overflow-x:hidden;
+}
+body.menu-open{
+  overflow:hidden;
+}
+img{
+  display:block;
+  max-width:100%;
+}
+a{
+  color:inherit;
+  text-decoration:none;
+}
+button{
+  font:inherit;
+}
+.topbar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:50;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 18px;
+  background:rgba(252,250,246,.90);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(32,32,32,.08);
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.18em;
+}
+.brand-mark{
+  width:28px;
+  height:28px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--red);
+  color:var(--red);
+  font-family:"Cormorant Garamond",serif;
+  font-size:19px;
+  font-weight:700;
+}
+.menu-btn{
+  width:42px;
+  height:42px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:5px;
+  border:0;
+  border-radius:999px;
+  background:transparent;
+  cursor:pointer;
+}
+.menu-btn span{
+  display:block;
+  width:20px;
+  height:1.5px;
+  background:var(--ink);
+  transition:.25s ease;
+}
+.menu-btn.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.menu-btn.open span:nth-child(2){opacity:0}
+.menu-btn.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.nav{
+  position:fixed;
+  top:0;
+  right:0;
+  width:min(82vw,340px);
+  height:100dvh;
+  padding:90px 30px 30px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  background:rgba(252,250,246,.98);
+  box-shadow:-30px 0 80px rgba(0,0,0,.12);
+  transform:translateX(105%);
+  transition:transform .28s ease;
+}
+.nav.open{
+  transform:translateX(0);
+}
+.nav a{
+  padding:18px 0;
+  border-bottom:1px solid var(--line);
+  font-family:"Cormorant Garamond",serif;
+  font-size:32px;
+  font-weight:600;
+}
+.hero{
+  min-height:100svh;
+  position:relative;
+  display:flex;
+  align-items:flex-end;
+  padding:34px 24px 64px;
+  background:
+    linear-gradient(180deg,rgba(0,0,0,.08) 5%,rgba(0,0,0,.06) 35%,rgba(14,12,10,.82) 100%),
+    url("assets/torre-pisa.png") center/cover no-repeat;
+}
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(143,29,44,.22),transparent 55%);
+}
+.hero-content{
+  position:relative;
+  z-index:1;
+  color:#fff;
+  max-width:360px;
+}
+.eyebrow,.section-kicker{
+  margin:0 0 12px;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.hero h1,.section h2,.closing h2{
+  margin:0;
+  font-family:"Cormorant Garamond",serif;
+  font-weight:600;
+  line-height:.92;
+}
+.hero h1{
+  font-size:84px;
+  letter-spacing:-.04em;
+}
+.hero-subtitle{
+  margin:12px 0 30px;
+  font-size:15px;
+  line-height:1.6;
+  color:rgba(255,255,255,.86);
+}
+.scroll-cue{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  color:#fff;
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.scroll-cue .arrow{
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(255,255,255,.45);
+  border-radius:50%;
+  font-size:15px;
+}
+.section-pad{
+  padding:74px 22px;
+}
+.section-kicker{
+  color:var(--red);
+}
+.section h2{
+  font-size:52px;
+  letter-spacing:-.03em;
+}
+.intro{
+  background:var(--cream);
+}
+.intro p,.lead,.story-block p,.pizza-copy p,.soil>p{
+  margin:18px 0 0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.85;
+}
+.full-image{
+  margin:0;
+}
+.full-image img{
+  width:100%;
+  aspect-ratio:1.28/1;
+  object-fit:cover;
+}
+.facts{
+  display:grid;
+  gap:12px;
+  background:var(--paper);
+}
+.fact-card{
+  padding:20px;
+  border:1px solid var(--line);
+  background:#fff;
+}
+.fact-card span{
+  display:block;
+  font-family:"Cormorant Garamond",serif;
+  font-size:40px;
+  color:var(--red);
+}
+.fact-card strong{
+  display:block;
+  margin-top:4px;
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.fact-card p{
+  margin:11px 0 0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.6;
+}
+.timeline{
+  background:#f0e9dd;
+}
+.timeline-item{
+  display:grid;
+  grid-template-columns:78px 1fr;
+  gap:16px;
+  padding:22px 0;
+  border-bottom:1px solid rgba(32,32,32,.10);
+}
+.timeline-item:last-child{
+  border-bottom:0;
+  padding-bottom:0;
+}
+.year{
+  font-size:10px;
+  font-weight:700;
+  color:var(--red);
+  letter-spacing:.08em;
+}
+.timeline-item h3,.story-block h3,.mini-card h3{
+  margin:0;
+  font-family:"Cormorant Garamond",serif;
+  font-size:27px;
+  font-weight:600;
+}
+.timeline-item p{
+  margin:7px 0 0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.7;
+}
+.parallax{
+  min-height:72vh;
+  position:relative;
+  display:grid;
+  place-items:center;
+  padding:54px 22px;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  isolation:isolate;
+}
+.parallax::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.16),rgba(0,0,0,.64));
+  z-index:-1;
+}
+.parallax-tower{
+  background-image:url("assets/torre-pisa-paisagem.jpg");
+}
+.parallax-pizza{
+  min-height:82vh;
+  background-image:url("assets/pizza-2.png");
+}
+.parallax-content{
+  max-width:340px;
+  color:#fff;
+  text-align:center;
+}
+.parallax-content .quote-mark{
+  display:block;
+  font-family:"Cormorant Garamond",serif;
+  font-size:78px;
+  line-height:.5;
+  opacity:.55;
+}
+.parallax-content p{
+  margin:0;
+  font-family:"Cormorant Garamond",serif;
+  font-size:41px;
+  line-height:.95;
+}
+.parallax-content small{
+  display:block;
+  margin-top:18px;
+  color:rgba(255,255,255,.78);
+  font-size:11px;
+  line-height:1.7;
+}
+.soil{
+  background:var(--paper);
+}
+.soil-diagram{
+  position:relative;
+  height:250px;
+  margin:30px 0 20px;
+  overflow:hidden;
+  background:
+    linear-gradient(#f4efe7 0 29%,#d6bb99 29% 52%,#c6a47e 52% 75%,#9c7653 75% 100%);
+  border:1px solid var(--line);
+}
+.ground-label{
+  position:absolute;
+  right:12px;
+  transform:translateY(-50%);
+  font-size:8px;
+  font-weight:700;
+  letter-spacing:.10em;
+}
+.label-clay{top:39%; color:#704f36}
+.label-sand{top:64%; color:#65472f}
+.label-gravel{top:88%; color:#fff}
+.tower-mini{
+  position:absolute;
+  left:27%;
+  top:16%;
+  width:76px;
+  height:176px;
+  transform:rotate(6deg);
+  transform-origin:90% 100%;
+  background:
+    repeating-linear-gradient(to bottom,#ece7df 0 18px,#dad2c5 19px 24px);
+  border-radius:45% 45% 5px 5px/12% 12% 4px 4px;
+  border:2px solid rgba(120,105,92,.28);
+  box-shadow:15px 0 18px rgba(0,0,0,.10);
+}
+.tower-mini::after{
+  content:"";
+  position:absolute;
+  left:11px;
+  right:11px;
+  top:16px;
+  height:7px;
+  border-radius:999px;
+  box-shadow:0 28px 0 rgba(120,105,92,.22),0 56px 0 rgba(120,105,92,.22),0 84px 0 rgba(120,105,92,.22),0 112px 0 rgba(120,105,92,.22);
+}
+.tower-mini span{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-5px;
+  height:12px;
+  background:#ddd2c2;
+}
+.tilt{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-top:26px;
+  padding:20px;
+  background:var(--red);
+  color:#fff;
+}
+.tilt>span{
+  font-family:"Cormorant Garamond",serif;
+  font-size:45px;
+  line-height:1;
+}
+.tilt strong{
+  display:block;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.10em;
+}
+.tilt small{
+  display:block;
+  margin-top:5px;
+  font-size:10px;
+  line-height:1.5;
+  opacity:.78;
+}
+.flag-section{
+  background:#171515;
+  color:#f7f1e7;
+}
+.flag-section .section-kicker{
+  color:#d4a567;
+}
+.flag-section .lead,.flag-section .story-block p{
+  color:rgba(247,241,231,.68);
+}
+.flag-image{
+  margin:0;
+  padding:0 22px;
+}
+.flag-image img{
+  width:100%;
+  max-height:320px;
+  object-fit:cover;
+  object-position:center;
+}
+.story-block{
+  padding:24px 0;
+  border-bottom:1px solid rgba(247,241,231,.14);
+}
+.story-block:last-child{border-bottom:0}
+.story-block h3{
+  color:#fff;
+}
+.pizza-section{
+  background:#f7eee3;
+}
+.parallax-pizza .eyebrow{
+  color:#fff;
+}
+.parallax-pizza h2{
+  font-family:"Cormorant Garamond",serif;
+  font-size:58px;
+  line-height:.9;
+  margin:0;
+}
+.parallax-pizza p{
+  margin-top:14px;
+  font-family:"Montserrat",sans-serif;
+  font-size:12px;
+  line-height:1.7;
+}
+.pizza-gallery{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+  padding:0 8px 8px;
+}
+.pizza-gallery figure{
+  margin:0;
+}
+.pizza-gallery img{
+  width:100%;
+  aspect-ratio:1/1.16;
+  object-fit:cover;
+}
+.pizza-copy{
+  padding-top:58px;
+}
+.mini-card{
+  display:grid;
+  grid-template-columns:44px 1fr;
+  gap:13px;
+  padding:22px 0;
+  border-bottom:1px solid rgba(32,32,32,.12);
+}
+.mini-card>span{
+  font-size:10px;
+  font-weight:700;
+  color:var(--red);
+  letter-spacing:.08em;
+}
+.mini-card p{
+  margin-top:8px;
+}
+.mini-card.highlight{
+  margin-top:6px;
+  padding:24px 0 0;
+  border-bottom:0;
+}
+.mini-card.highlight h3{
+  color:var(--red);
+}
+.closing{
+  position:relative;
+  min-height:74vh;
+  display:flex;
+  align-items:flex-end;
+  padding:32px 22px 54px;
+  overflow:hidden;
+  background:#211d1a;
+  color:#fff;
+}
+.closing-art{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(180deg,transparent 0%,rgba(21,18,16,.80) 82%),
+    url("assets/torre-pisa.png") center 52%/cover no-repeat;
+  opacity:.6;
+}
+.closing-content{
+  position:relative;
+  z-index:1;
+}
+.closing .eyebrow{
+  color:#e4be82;
+}
+.closing h2{
+  font-size:53px;
+}
+.back-top{
+  display:inline-block;
+  margin-top:27px;
+  padding:12px 18px;
+  border:1px solid rgba(255,255,255,.35);
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+footer{
+  padding:25px 22px 34px;
+  background:#161414;
+  color:rgba(255,255,255,.58);
+}
+footer p{
+  margin:0;
+  font-size:11px;
+}
+footer span{
+  display:block;
+  margin-top:7px;
+  font-size:9px;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .nav,.menu-btn span{transition:none}
+}
+@supports (-webkit-touch-callout:none){
+  .parallax{
+    background-attachment:scroll;
+  }
+}
